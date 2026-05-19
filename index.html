@@ -484,9 +484,9 @@ footer{
     <li><a href="#services">Services</a></li>
     <li><a href="#examples">Examples</a></li>
     <li><a href="#pricing">Pricing</a></li>
-    <li><a href="#contact">Talk to Me</a></li>
+    <li><a href="https://calendly.com/groundedai-hello/30min">Talk to Me</a></li>
   </ul>
-  <a class="nav-btn" href="#contact">Free 30-min Call</a>
+  <a class="nav-btn" href="https://calendly.com/groundedai-hello/30min">Free 30-min Call</a>
 </nav>
 
 <!-- HERO -->
@@ -501,7 +501,7 @@ footer{
         AI is everywhere right now. Most businesses still don't know where it actually creates value. After 7 years building and shipping AI products at Amazon, I help businesses apply AI the right way for their specific needs, improving operations, reducing busywork, and creating measurable impact.
       </p>
       <div class="hero-actions">
-        <a class="btn-primary" href="#contact">Book a Free Conversation</a>
+        <a class="btn-primary" href="https://calendly.com/groundedai-hello/30min">Book a Free Conversation</a>
         <a class="btn-ghost" href="#examples">See Real Examples</a>
       </div>
       <p class="hero-footnote">First call is free. Plain words. No jargon, no pitch, no pressure.</p>
@@ -657,7 +657,7 @@ footer{
           <li>Documentation and handoff</li>
           <li>2 weeks post-launch support</li>
         </ul>
-        <a class="btn-ghost" href="#contact" style="display:block;text-align:center;border-radius:100px;font-size:14px">Start a Conversation</a>
+        <a class="btn-ghost" href="https://calendly.com/groundedai-hello/30min" style="display:block;text-align:center;border-radius:100px;font-size:14px">Start a Conversation</a>
       </div>
       <div class="pc feat rev">
         <div class="pt">Growth</div>
@@ -671,7 +671,7 @@ footer{
           <li>Full documentation</li>
           <li>1 month post-launch support</li>
         </ul>
-        <a class="btn-primary" href="#contact" style="display:block;text-align:center;border-radius:100px;font-size:14px">Book a Free Call</a>
+        <a class="btn-primary" href="https://calendly.com/groundedai-hello/30min" style="display:block;text-align:center;border-radius:100px;font-size:14px">Book a Free Call</a>
       </div>
       <div class="pc rev">
         <div class="pt">Strategic</div>
@@ -685,7 +685,7 @@ footer{
           <li>Architecture ownership</li>
           <li>Priority support ongoing</li>
         </ul>
-        <a class="btn-ghost" href="#contact" style="display:block;text-align:center;border-radius:100px;font-size:14px">Let's Talk</a>
+        <a class="btn-ghost" href="https://calendly.com/groundedai-hello/30min" style="display:block;text-align:center;border-radius:100px;font-size:14px">Let's Talk</a>
       </div>
     </div>
   </div>
@@ -704,7 +704,7 @@ footer{
           <div class="c-row"><span class="c-row-l">First call</span><span class="c-row-v">Free · 30 min · No commitment</span></div>
           <div class="c-row"><span class="c-row-l">Response time</span><span class="c-row-v">Within 24 hours</span></div>
           <div class="c-row"><span class="c-row-l">Email</span><span class="c-row-v"><a href="mailto:hello@groundedai.co" style="color:var(--ocean2);text-decoration:none;font-weight:500">hello@groundedai.co</a></span></div>
-          <div class="c-row"><span class="c-row-l">Website</span><span class="c-row-v"><a href="https://YOUR-WEBSITE-HERE" target="_blank" style="color:var(--ocean2);text-decoration:none;font-weight:500">groundedai.co ↗</a></span></div>
+          <div class="c-row"><span class="c-row-l">Website</span><span class="c-row-v"><a href="https://groundedaihello.github.io/" target="_blank" style="color:var(--ocean2);text-decoration:none;font-weight:500">groundedaihello.github.io ↗</a></span></div>
         </div>
         <div class="promise">
           <p><strong>My promise:</strong> I will never recommend AI for your business if it isn't the right fit. You'll leave our call knowing exactly what's possible — and what isn't.</p>
@@ -712,7 +712,13 @@ footer{
 
       </div>
       <div class="rev">
-        <form class="contact-form" onsubmit="sendForm(event)">
+        <form
+          action="https://formspree.io/f/meedekwl"
+          method="POST">
+
+        <input type="hidden"
+        name="_next"
+        value="https://calendly.com/groundedai-hello/30min">
           <div class="form-row">
             <div class="fg"><label for="fn">First Name</label><input id="fn" type="text" placeholder="Jane" required></div>
             <div class="fg"><label for="ln">Last Name</label><input id="ln" type="text" placeholder="Smith" required></div>
@@ -752,7 +758,7 @@ footer{
     <li><a href="#about">About</a></li>
     <li><a href="#services">Services</a></li>
     <li><a href="#examples">Examples</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <li><a href="https://calendly.com/groundedai-hello/30min">Contact</a></li>
   </ul>
   <div class="fcopy">© 2026 · GroundedAI · Pasadena, CA · <a href="mailto:groundedai.hello@gmail.com" style="color:rgba(255,255,255,.5);text-decoration:none">groundedai.hello@gmail.com</a></div>
 </footer>
@@ -767,11 +773,7 @@ const io=new IntersectionObserver((es)=>{
   })
 },{threshold:.08})
 document.querySelectorAll('.rev').forEach(el=>io.observe(el))
-function sendForm(e){
-  e.preventDefault()
-  document.getElementById('fok').style.display='block'
-  e.target.querySelectorAll('input,select,textarea,button').forEach(el=>el.disabled=true)
-}
+
 </script>
 </body>
 </html>
