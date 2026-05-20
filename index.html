@@ -196,6 +196,45 @@ h2 strong{font-weight:600}
 
 .body-text{font-size:16px;color:var(--muted);font-weight:300;line-height:1.85;max-width:520px}
 
+
+/* PAIN POINTS */
+.pain-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:14px;
+  margin-top:28px;
+}
+.pain-card{
+  background:#fff;
+  border:1.5px solid var(--border);
+  border-radius:14px;
+  padding:18px 18px;
+  transition:box-shadow .25s,transform .25s,border-color .25s;
+}
+.pain-card:hover{
+  box-shadow:0 5px 24px rgba(12,74,99,.08);
+  transform:translateY(-2px);
+  border-color:var(--sky);
+}
+.pain-card h3{
+  font-family:var(--sans);
+  font-size:15px;
+  font-weight:600;
+  color:var(--ocean);
+  line-height:1.35;
+  margin-bottom:8px;
+}
+.pain-card p{
+  font-size:13px;
+  color:var(--muted);
+  font-weight:300;
+  line-height:1.65;
+}
+.pain-intro{
+  max-width:680px;
+  margin-bottom:8px;
+}
+
 /* ABOUT */
 .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
 .pullquote{
@@ -381,6 +420,7 @@ h2 strong{font-weight:600}
 .fg textarea{min-height:100px}
 .fg select option{background:#fff}
 .form-btn{
+  margin-top:16px;
   background:var(--ocean);color:#fff;border:none;
   padding:14px 26px;border-radius:100px;
   font-family:var(--sans);font-size:15px;font-weight:600;
@@ -463,7 +503,7 @@ footer{
   .hero-inner,.about-grid,.contact-grid{grid-template-columns:1fr;gap:36px}
   .trust{padding:28px 20px;gap:28px}
   .sec{padding:60px 20px}
-  .svc-grid,.proc-grid,.cases-grid,.price-grid{grid-template-columns:1fr}
+  .svc-grid,.proc-grid,.cases-grid,.price-grid,.pain-grid{grid-template-columns:1fr}
   .proc-grid::before{display:none}
   .form-row{grid-template-columns:1fr}
   footer{flex-direction:column;text-align:center;padding:28px 20px}
@@ -534,6 +574,41 @@ footer{
 </div>
 
 <div class="wave" style="transform:rotate(180deg);background:var(--off)"><svg viewBox="0 0 1200 55" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M0,28 C200,55 400,0 600,28 C800,55 1000,0 1200,28 L1200,55 L0,55 Z" fill="#0c4a63"/></svg></div>
+
+
+<!-- PAIN POINTS -->
+<section class="sec" id="pain-points">
+  <div class="sec-in">
+    <div class="rev pain-intro">
+      <span class="ey">Does This Sound Familiar?</span>
+      <h2>AI should solve the work<br><em>that slows your business down.</em></h2>
+      <p class="body-text">These are the everyday operational problems where practical AI can start creating value quickly.</p>
+    </div>
+
+    <div class="pain-grid">
+      <div class="pain-card rev">
+        <h3>📋 “We're drowning in emails and reports”</h3>
+        <p>AI drafts, summarizes, organizes, and routes them automatically.</p>
+      </div>
+
+      <div class="pain-card rev">
+        <h3>🔍 “We can't find anything in our files”</h3>
+        <p>Ask your documents a question. Get an instant answer from your own information.</p>
+      </div>
+
+      <div class="pain-card rev">
+        <h3>⏰ “My team does the same tasks every day”</h3>
+        <p>Repetitive work gets automated so your team can focus on the real work.</p>
+      </div>
+
+      <div class="pain-card rev">
+        <h3>📉 “We're losing clients and don't know why”</h3>
+        <p>AI spots patterns in your data before they become expensive problems.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 <!-- ABOUT -->
 <section class="sec off-bg" id="about">
@@ -690,7 +765,6 @@ footer{
     </div>
   </div>
 </section> -->
--->
 
 <!-- CONTACT -->
 <section class="sec contact-section" id="contact">
@@ -708,7 +782,7 @@ footer{
           <div class="c-row"><span class="c-row-l">Website</span><span class="c-row-v"><a href="https://groundedaihello.github.io/" target="_blank" style="color:var(--ocean2);text-decoration:none;font-weight:500">groundedaihello.github.io ↗</a></span></div>
         </div>
         <div class="promise">
-          <p><strong>My promise:</strong> I will never recommend AI for your business if it isn't the right fit. You'll leave our call knowing exactly what's possible — and what isn't.</p>
+          <p><strong>My promise:</strong> No hype. No unnecessary complexity. Just thoughtful guidance on how AI can realistically improve operations, reduce manual work, and create measurable business value.</p>
         </div>
 
       </div>
@@ -717,9 +791,6 @@ footer{
           action="https://formspree.io/f/meedekwl"
           method="POST">
 
-        <input type="hidden"
-        name="_next"
-        value="https://calendly.com/groundedai-hello/30min">
           <div class="form-row">
             <div class="fg"><label for="fn">First Name</label><input id="fn" type="text" placeholder="Jane" required></div>
             <div class="fg"><label for="ln">Last Name</label><input id="ln" type="text" placeholder="Smith" required></div>
@@ -741,7 +812,7 @@ footer{
             </select>
           </div>
           <div class="fg"><label for="msg">What takes too long in your business right now?</label><textarea id="msg" placeholder="A workflow that eats hours, a question your team can't answer fast enough, data you're not using, anything that frustrates you..."></textarea></div>
-          <button type="submit" class="form-btn">Send — Book My Free Call <span style="font-size:17px">→</span></button>
+          <button type="submit" class="form-btn">Start the conversation <span style="font-size:17px">→</span></button>
           <div class="form-ok" id="fok">✓ Got it! I'll be in touch within 24 hours.</div>
         </form>
       </div>
